@@ -1,3 +1,3 @@
 `use strict`;
 
-// loop
+// loop for and while

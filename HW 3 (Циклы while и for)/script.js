@@ -5,8 +5,8 @@
 // При помощи цикла for выведите чётные числа от 2 до 10.
 
 let number = +prompt(`Enter number`);
-for (let i = 0; i < number; i++) {
-  if (i % 2 === 0 && i !== 0) {
+for (let i = 2; i <= number; i++) {
+  if (i % 2 === 0) {
     console.log(i);
   }
 }

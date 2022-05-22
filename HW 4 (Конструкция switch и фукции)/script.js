@@ -1,24 +1,24 @@
 `use strict`;
 
-// // SWITCH CASE
+// SWITCH CASE
 
-// // Напишите if..else, соответствующий следующему switch:
+// Напишите if..else, соответствующий следующему switch:
 
-// // switch (browser) {
-// //   case "Edge":
-// //     alert("You've got the Edge!");
-// //     break;
+// switch (browser) {
+//   case "Edge":
+//     alert("You've got the Edge!");
+//     break;
 
-// //   case "Chrome":
-// //   case "Firefox":
-// //   case "Safari":
-// //   case "Opera":
-// //     alert("Okay we support these browsers too");
-// //     break;
+//   case "Chrome":
+//   case "Firefox":
+//   case "Safari":
+//   case "Opera":
+//     alert("Okay we support these browsers too");
+//     break;
 
-// //   default:
-// //     alert("We hope that this page looks ok!");
-// // }
+//   default:
+//     alert("We hope that this page looks ok!");
+// }
 
 let browser = prompt(`Enter your browser`);
 
@@ -35,21 +35,21 @@ if (browser === `Edge`) {
   alert("We hope that this page looks ok!");
 }
 
-// // Перепишите код с использованием одной конструкции switch:
+// Перепишите код с использованием одной конструкции switch:
 
-// // const number = +prompt("Введите число между 0 и 3", "");
+// const number = +prompt("Введите число между 0 и 3", "");
 
-// // if (number === 0) {
-// //   alert("Вы ввели число 0");
-// // }
+// if (number === 0) {
+//   alert("Вы ввели число 0");
+// }
 
-// // if (number === 1) {
-// //   alert("Вы ввели число 1");
-// // }
+// if (number === 1) {
+//   alert("Вы ввели число 1");
+// }
 
-// // if (number === 2 || number === 3) {
-// //   alert("Вы ввели число 2, а может и 3");
-// // }
+// if (number === 2 || number === 3) {
+//   alert("Вы ввели число 2, а может и 3");
+// }
 
 const number = +prompt("Введите число между 0 и 3", "");
 
@@ -143,3 +143,24 @@ if (a >= 1 && b >= 1) {
 } else {
   console.log(`Error`);
 }
+
+// Function Expression
+
+// Замените код Function Expression стрелочной функцией:
+
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes()
+//   else no();
+// }
+
+// ask(
+//   "Вы согласны?",
+//   function() { alert("Вы согласились."); },
+//   function() { alert("Вы отменили выполнение."); }
+// );
+
+let askQuestion = (question, yes, no) =>
+  confirm(question)
+    ? alert("Вы согласились.")
+    : alert("Вы отменили выполнение.");
+askQuestion("Вы согласны?");

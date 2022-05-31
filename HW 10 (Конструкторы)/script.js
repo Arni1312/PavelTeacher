@@ -54,8 +54,8 @@ console.log("Mul=" + calculator.mul());
 function Accumulator(startingValue) {
   this.value = startingValue;
   this.read = function () {
-    this.number = +prompt("number");
-    this.value += this.number;
+    const number = +prompt("number");
+    this.value += number;
     return this.value;
   };
 }

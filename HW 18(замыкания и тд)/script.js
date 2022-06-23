@@ -119,10 +119,10 @@ console.log(user.signIn.apply(user2, ["123"]));
 
 function printNumbers(from, to) {
   let start = from;
-  let time = setInterval(() => {
+  const interval = setInterval(() => {
     if (start <= to) {
       console.log(start);
-    } else clearTimeout(time);
+    } else clearTimeout(interval);
     start++;
   }, 1000);
 }

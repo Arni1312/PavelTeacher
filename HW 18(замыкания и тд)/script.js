@@ -119,14 +119,14 @@ console.log(user.signIn.apply(user2, ["123"]));
 
 function printNumbers(from, to) {
   let start = from;
-  setInterval(() => {
+  let time = setInterval(() => {
     if (start <= to) {
       console.log(start);
-    }
+    } else clearTimeout(time);
     start++;
-  }, 3000);
+  }, 1000);
 }
-printNumbers(5, 15);
+printNumbers(0, 5);
 
 // Используя рекурсивный setTimeout.
 

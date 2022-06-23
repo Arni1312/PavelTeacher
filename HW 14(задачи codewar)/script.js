@@ -72,10 +72,14 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
   return winer;
 }
 
+const randomNumber = () => {
+  return Math.round(Math.random() * 100);
+};
+
 console.log(
   declareWinner(
-    new Fighter("Harald", 20, 5),
-    new Fighter("Harry", 5, 4),
+    new Fighter("Harald", randomNumber(), randomNumber()),
+    new Fighter("Harry", randomNumber(), randomNumber()),
     "Harald"
   )
 );
